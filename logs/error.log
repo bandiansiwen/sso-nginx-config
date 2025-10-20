@@ -1,0 +1,40 @@
+2025/10/20 11:33:25 [notice] 8#8: signal process started
+2025/10/20 11:40:58 [notice] 15#15: signal process started
+2025/10/20 11:46:46 [notice] 22#22: signal process started
+2025/10/20 11:48:59 [emerg] 29#29: unknown "target_server" variable
+2025/10/20 11:49:01 [emerg] 35#35: unknown "target_server" variable
+2025/10/20 11:49:50 [notice] 41#41: signal process started
+2025/10/20 11:50:01 [error] 47#47: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", upstream: "https://127.0.0.1:7000/index.html", host: "localhost:7000"
+2025/10/20 12:14:42 [notice] 48#48: signal process started
+2025/10/20 12:14:47 [error] 54#54: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", upstream: "http://127.0.0.1:7000/50x.html", host: "localhost:7000"
+2025/10/20 12:14:48 [error] 54#54: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", upstream: "http://127.0.0.1:7000/50x.html", host: "localhost:7000"
+2025/10/20 12:14:48 [error] 54#54: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", upstream: "http://127.0.0.1:7000/50x.html", host: "localhost:7000"
+2025/10/20 12:14:53 [error] 54#54: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", upstream: "http://127.0.0.1:7000/50x.html", host: "localhost:7000"
+2025/10/20 12:16:39 [notice] 55#55: signal process started
+2025/10/20 12:16:46 [error] 61#61: *20 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/router.lua:15: variable "target_server" not found for writing; maybe it is a built-in variable that is not changeable or you forgot to use "set $target_server '';" in the config file to define it first
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/resty/core/var.lua:144: in function '__newindex'
+	/usr/local/openresty/nginx/lua/router.lua:15: in main chunk, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", host: "localhost:7000"
+2025/10/20 12:16:46 [error] 61#61: *21 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/router.lua:15: variable "target_server" not found for writing; maybe it is a built-in variable that is not changeable or you forgot to use "set $target_server '';" in the config file to define it first
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/resty/core/var.lua:144: in function '__newindex'
+	/usr/local/openresty/nginx/lua/router.lua:15: in main chunk, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", host: "localhost:7000"
+2025/10/20 12:16:46 [error] 61#61: *22 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/router.lua:15: variable "target_server" not found for writing; maybe it is a built-in variable that is not changeable or you forgot to use "set $target_server '';" in the config file to define it first
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/resty/core/var.lua:144: in function '__newindex'
+	/usr/local/openresty/nginx/lua/router.lua:15: in main chunk, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", host: "localhost:7000"
+2025/10/20 12:16:46 [error] 61#61: *23 lua entry thread aborted: runtime error: /usr/local/openresty/nginx/lua/router.lua:15: variable "target_server" not found for writing; maybe it is a built-in variable that is not changeable or you forgot to use "set $target_server '';" in the config file to define it first
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/resty/core/var.lua:144: in function '__newindex'
+	/usr/local/openresty/nginx/lua/router.lua:15: in main chunk, client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", host: "localhost:7000"
+2025/10/20 12:17:47 [notice] 62#62: signal process started
+2025/10/20 12:17:49 [error] 69#69: *25 open() "/usr/local/openresty/nginx/html/router" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /router HTTP/1.1", host: "localhost:7000"
+2025/10/20 12:17:55 [error] 69#69: *25 open() "/usr/local/openresty/nginx/html/index2.html" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /index2.html HTTP/1.1", host: "localhost:7000"
